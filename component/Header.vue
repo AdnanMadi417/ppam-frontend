@@ -5,12 +5,11 @@
 <template>
   <div class="header-container">
     <div class="header-wrapper">
+
       <div class="logo-container">
-        <div class="logo">
-          <a href="http://www.ppam.my">
-            <img src="/images/ppam-logo.png" alt="PPAM Logo" />
-          </a>
-        </div>
+        <a href="http://www.ppam.my">
+          <img src="/images/ppam-logo.png" alt="PPAM Logo"/>
+        </a>
       </div>
 
       <div class="header-title">
@@ -25,37 +24,67 @@
 .header-container {
   background-color: var(--primary-color);
   padding: 0.5rem 1rem;
-  max-height: 500px;
 }
 
 .header-wrapper {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   align-items: center;
+  flex-wrap: wrap;
 }
 
-.logo img {
+.logo-container img {
   width: 90px;
-  height: 70px;
+  height: auto;
 }
 
 .header-title h2 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: normal;
   text-transform: uppercase;
-  color: var(--primary-color);
+  color: var(--text-color);
+  text-align: center;
 }
 
-@media (max-width: 1200px) {
-  .header-wrapper {
-    display: block;
+@media (max-width: 992px) {
+  .header-title h2 {
+    font-size: 1.4rem;
   }
 
-  .logo-container {
+  .header-wrapper {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .logo-container img {
+    width: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    text-align: center;
   }
 
+  .logo-container img {
+    width: 70px;
+  }
+
+  .header-title h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-title h2 {
+    font-size: 1rem;
+  }
+
+  .logo-container img {
+    width: 60px;
+  }
 }
 </style>
