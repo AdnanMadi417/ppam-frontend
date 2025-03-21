@@ -8,7 +8,7 @@
 
       <div class="logo-container">
         <a href="http://www.ppam.my">
-          <img src="../public/images/ppam-logo.png" alt="PPAM Logo"/>
+          <img src="/images/ppam-logo.png" alt="PPAM Logo"/>
         </a>
       </div>
 
