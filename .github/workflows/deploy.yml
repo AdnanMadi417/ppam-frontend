@@ -1,9 +1,8 @@
-name: Deploy App to github pages
+name: Deploy App to GitHub Pages
 
 on:
   push:
     branches: ["master"]
-
   workflow_dispatch:
 
 permissions:
@@ -19,16 +18,16 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: "20"
           cache: 'npm'
 
-      - name: Setup Pages
+      - name: Configure GitHub Pages
         uses: actions/configure-pages@v4
 
       - name: Install dependencies
@@ -39,7 +38,7 @@ jobs:
         env:
           NITRO_PRESET: github_pages
 
-      - name: Upload artifact
+      - name: Upload build artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: .output/public
@@ -50,7 +49,6 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     needs: build
     runs-on: ubuntu-latest
-    name: Deploy
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
