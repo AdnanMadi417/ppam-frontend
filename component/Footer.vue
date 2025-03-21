@@ -5,6 +5,7 @@ const currentYear = new Date().getFullYear();
 <template>
   <div class="footer">
     <div class="main-container">
+
       <div class="info-container">
         <div class="box">
           <span class="icon"><UIcon name="mdi-location"/></span>
@@ -28,71 +29,7 @@ const currentYear = new Date().getFullYear();
         </div>
       </div>
       <hr class="divider">
-      <div class="links-container">
-        <div class="links">
-          <h2>Quick Links</h2>
-          <ul>
-            <li>
-              <router-link to="/home">
-              <span>
-                <UIcon name="material-symbols-contact-page"
-                />
-              </span>Home
-              </router-link>
-            </li>
-            <li>
-              <router-link to="/about">
-                <span class="icon"><UIcon class="bar-icon-links" name="la-university"/></span>About
-              </router-link>
-            </li>
-            <li>
-              <router-link to="/maintenance-room-form">
-              <span>
-                <UIcon name="ph-student-bold"
-                />
-              </span>Maintenance Form
-              </router-link>
-            </li>
-            <li>
-              <router-link to="/change-room-form">
-              <span>
-                <UIcon name="ph-student-bold"
-                />
-              </span>Change Room Form
-              </router-link>
-            </li>
-          </ul>
-        </div>
-        <div class="others-links-section">
-          <h2>Others</h2>
-          <ul>
-            <li>
-              <a href="https://aiustudenthostelleavesystem.net/leave_system/singup">
-              <span><UIcon name="la-university"/>
-              </span>
-                Hostel leave</a></li>
-            <li>
-              <router-link to="/faq">
-              <span><UIcon name="material-symbols-policy-outline"/>
-              </span>
-                Policy
-              </router-link>
-            </li>
-          </ul>
-        </div>
-        <div class="subscribe-section">
-          <h1 class="subscribe-title">Subscribe</h1>
-          <div class="container-form">
-            <div class="subscribe-input">
-              <input type="email" placeholder="Enter your email"/>
-            </div>
-            <div class="subscribe-button">
-              <button>Subscribe</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <hr class="divider">
+
       <div class="socials-section">
         <div class="socials-container">
           <div></div>
@@ -126,6 +63,7 @@ const currentYear = new Date().getFullYear();
           <p>&copy; Copyright <a href="https://aiu.edu.my/">Albukhary International University {{ currentYear }}</a></p>
         </div>
       </div>
+
     </div>
   </div>
 </template>
@@ -144,8 +82,7 @@ const currentYear = new Date().getFullYear();
     padding: 0;
   }
 }
-.info-container,
-.links-container {
+.info-container{
   display: flex;
   flex-direction: row;
 }
@@ -158,9 +95,6 @@ const currentYear = new Date().getFullYear();
 }
 @media (max-width: 800px) {
   .info-container {
-    display: block;
-  }
-  .links-container {
     display: block;
   }
 }
@@ -180,10 +114,7 @@ const currentYear = new Date().getFullYear();
   margin: 1rem 0;
   border: 2px solid var(--text-hover);
 }
-.links,
-.others-links-section {
-  margin: 0 5rem;
-}
+
 .links h2,
 .subscribe-section h2,
 .others-links-section h2 {
@@ -211,50 +142,7 @@ const currentYear = new Date().getFullYear();
   color: var(--text-color);
   transition: .3s ease-in-out;
 }
-.subscribe-section {
-  text-align: start;
-  padding: 2rem;
-}
-.container-form {
-  display: flex;
-  justify-content: space-around;
-  gap: 20px;
-}
-@media (max-width: 800px) {
-  .container-form {
-    display: block;
-    margin: 0 auto;
-  }
-  .container-form div {
-    margin: 3rem 0;
-  }
-}
-.subscribe-title {
-  color: var(--text-color);
-  margin-bottom: 10px;
-  margin-top: -20px;
-  font-size: 1.5rem;
-}
-.subscribe-input input {
-  padding: .5rem;
-  font-size: 1rem;
-  width: 12rem;
-  border: 1px solid var(--text-color);
-  border-radius: 5px;
-}
-.subscribe-button button {
-  padding: .5rem;
-  font-size: 1rem;
-  background-color: var(--text-color);
-  color: var(--primary-color);
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.subscribe-button button:hover {
-  background-color: var(--text-color);
-  transition: .3s ease-in-out;
-}
+
 .socials-container {
   display: flex;
   justify-content: space-between;
