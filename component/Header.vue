@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  this is test front end
+
 </template>
 
 <style scoped>
