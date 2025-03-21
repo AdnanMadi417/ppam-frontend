@@ -9,8 +9,8 @@
 :root {
   --primary-color: #00796B;
   --primary-hover: #00574B;
-  --text-light: #FFFFFF;
-  --text-hover: #B71C1C;
+  --text-color: #FFFFFF;
+  --text-hover: #EEEEEE;
 }
 
 
