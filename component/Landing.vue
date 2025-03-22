@@ -1,5 +1,7 @@
 <script lang="ts" setup>
 
+const landing = "./images/ppam-logo.png"
+
 </script>
 
 <template>
@@ -22,7 +24,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("../public/images/landing-bg.png");
+  background-image: url("/images/landing-bg.png");
   background-size: cover;
   background-position: center;
   opacity: 0;
