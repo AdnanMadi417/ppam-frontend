@@ -1,5 +1,7 @@
 <script setup>
 
+const logo = "./images/ppam-logo.png"
+
 </script>
 
 <template>
@@ -8,7 +10,7 @@
 
       <div class="logo-container">
         <a href="http://www.ppam.my">
-          <img src="~/images/ppam-logo.png" alt="PPAM Logo"/>
+          <img :src="logo" alt="PPAM Logo"/>
         </a>
       </div>
 
