@@ -73,7 +73,7 @@ const landing = "./images/ppam-logo.png"
 }
 
 .subtext {
-  font-size: 1rem;
+  font-size: 2rem;
   line-height: 1.6;
   margin-bottom: 1.5rem;
   color: var(--primary-color);
@@ -109,7 +109,7 @@ const landing = "./images/ppam-logo.png"
   }
 
   .subtext {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 }
 
