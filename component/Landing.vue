@@ -10,7 +10,7 @@
         <p class="subtext">"landing.description"</p>
       </div>
       <div class="image-container">
-        <img src="/images/ppam-logo.png" alt="landing-image" class="landing-image" />
+        <img src="./images/ppam-logo.png" alt="landing-image" class="landing-image" />
       </div>
     </div>
   </section>
