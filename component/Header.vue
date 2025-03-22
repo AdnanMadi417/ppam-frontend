@@ -50,7 +50,7 @@ const logo = "./images/ppam-logo.png"
 
 @media (max-width: 992px) {
   .header-title h2 {
-    font-size: 1.4rem;
+    display: none;
   }
 
   .header-wrapper {
