@@ -8,8 +8,8 @@ const landing = "./images/ppam-logo.png"
   <section class="landing-section">
     <div class="content-wrapper">
       <div class="text-container">
-        <h2 class="headline">"landing.headline"</h2>
-        <p class="subtext">"landing.description"</p>
+        <h2 class="headline">Palestinian Progressive Association Malaysia</h2>
+        <p class="subtext">"Coming Soon"</p>
       </div>
       <div class="image-container">
         <img :src="landing" alt="landing-image" class="landing-image" />
@@ -24,9 +24,7 @@ const landing = "./images/ppam-logo.png"
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("/images/landing-bg.png");
-  background-size: cover;
-  background-position: center;
+  background: #EEEEEE;
   opacity: 0;
   animation: fadeIn 1.5s forwards;
   padding: 1rem;
@@ -64,21 +62,21 @@ const landing = "./images/ppam-logo.png"
   justify-content: center;
   opacity: 0;
   animation: fadeIn 1.5s ease-in-out forwards;
-  color: var(--text-color);
+  color: var(--primary-color);
 }
 
 .headline {
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
-  color: var(--text-color);
+  color: var(--primary-color);
 }
 
 .subtext {
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 1.5rem;
-  color: var(--text-color);
+  color: var(--primary-color);
 }
 
 @media (max-width: 1200px) {
