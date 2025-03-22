@@ -9,7 +9,7 @@ const landing = "./images/ppam-logo.png"
     <div class="content-wrapper">
       <div class="text-container">
         <h2 class="headline">Palestinian Progressive Association Malaysia</h2>
-        <p class="subtext">"Coming Soon"</p>
+        <p class="subtext">Coming Soon</p>
       </div>
       <div class="image-container">
         <img :src="landing" alt="landing-image" class="landing-image" />
