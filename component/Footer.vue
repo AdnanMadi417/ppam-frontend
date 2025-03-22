@@ -10,24 +10,23 @@ const currentYear = new Date().getFullYear();
         <div class="box">
           <span class="icon"><UIcon name="mdi-location"/></span>
           <p class="info">
-            <a href="https://www.google.com/maps/place/Albukhary+International+University+(AIU)/@6.1336498,100.3863971,15z/data=!4m6!3m5!1s0x304b5ac489a998b9:0x3fa53e13f07fbb01!8m2!3d6.1336498!4d100.3863971!16s%2Fg%2F1216lnq4?entry=ttu&g_ep=EgoyMDI0MTAwOS4wIKXMDSoASAFQAw%3D%3D">
-              Jalan Tun Abdul Razak,
-              05200, Alor Setar,
-              Kedah Darul Aman, Malaysia.
+            <a href="https://www.google.com/maps/place/Palestinian+Progressive+Association+Malaysia/@3.2000926,101.714227,17z/data=!3m1!4b1!4m6!3m5!1s0x31cc3973161d5f85:0xb2a9f84a181acb11!8m2!3d3.2000872!4d101.7168019!16s%2Fg%2F11jkq14vh2?entry=ttu&g_ep=EgoyMDI1MDMxOS4xIKXMDSoASAFQAw%3D%3D">
+              Jalan Genting Kelang, Taman Danau Kota, 53100 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur
             </a>
           </p>
         </div>
         <div class="box">
           <span class="icon"><UIcon name="ic-baseline-phone"/></span>
-          <p class="info"><a href="tel:+604774 7300">(60) 4774 7300</a></p>
+          <p class="info"><a href="tel:+60341444240">(60) 3414 44240</a></p>
         </div>
         <div class="box">
           <span class="icon"><UIcon name="ic-baseline-email"/></span>
-          <p class="info"><a href="mailto:info@aiu.edu.my">info@aiu.edu.my</a></p>
+          <p class="info"><a href="mailto:info@aiu.edu.my">info@ppam.my</a></p>
         </div>
         <div class="box">
           <span class="icon"><UIcon name="mdi-university"/></span>
-          <p class="info"><a href="https://aiu.edu.my/">Albukhary International University </a></p>
+          <p class="info"><a href="https://www.ppam.my/">Palestinian Progressive Association Malaysia
+          </a></p>
         </div>
       </div>
       <hr class="divider">
@@ -38,12 +37,12 @@ const currentYear = new Date().getFullYear();
           <div class="social-icons">
             <ul>
               <li>
-                <a href="" target="_blank" rel="noopener">
+                <a href="https://www.facebook.com/ppa.my.pal?mibextid=LQQJ4d" target="_blank" rel="noopener">
                   <UIcon name="ic-baseline-facebook"/>
                 </a>
               </li>
               <li>
-                <a href="" target="_blank" rel="noopener">
+                <a href="https://www.instagram.com/ppa.my.pal?igsh=b2h1dTM4YzN2M3Ni" target="_blank" rel="noopener">
                   <UIcon name="mdi-instagram"/>
                 </a>
               </li>
@@ -163,14 +162,21 @@ const currentYear = new Date().getFullYear();
 }
 
 .social-icons ul li {
+  list-style: none;
   width: 3rem;
   height: 3rem;
   text-align: center;
   font-size: 1.5rem;
-  padding: 5px;
+  padding: 8px;
   border: 2px solid var(--text-color);
   border-radius: 50%;
+}
+
+.social-icons ul li a {
   color: var(--text-color);
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
 }
 
 .social-icons ul li:hover {
@@ -178,6 +184,11 @@ const currentYear = new Date().getFullYear();
   border: 2px solid var(--text-hover);
   transition: .3s ease-in-out;
 }
+
+.social-icons ul li a {
+  color: var(--text-hover);
+}
+
 
 @media (max-width: 1200px) {
   .links ul li span {
@@ -198,15 +209,26 @@ const currentYear = new Date().getFullYear();
 
 .footer-bottom a {
   color: var(--text-color);
+  text-decoration: none;
+  transition: color .3s ease-in-out;
 }
 
-a:hover {
+.footer-bottom a:hover {
   color: var(--text-hover);
+  text-decoration: underline;
 }
 
 .info {
   a {
     text-decoration: none;
+    color: var(--text-color);
+    transition: color .3s ease-in-out;
+  }
+}
+
+.info {
+  a:hover {
+    color: var(--text-hover);
   }
 }
 </style>
