@@ -31,11 +31,11 @@ const bankTransferSections = [
         Every Contribution Counts, Every Student Matters.
       </h3>
       <ul aria-label="Bank transfer instructions">
-        <li  v-for="(section, index) in bankTransferSections" :key="index" >
+        <li v-for="(section, index) in bankTransferSections" :key="index">
           <UIcon
               :name="section.icon"
               class="icon"/>
-          {{section.content}}
+          {{ section.content }}
         </li>
       </ul>
     </div>
@@ -85,6 +85,7 @@ const bankTransferSections = [
   display: flex;
   align-items: center;
   margin: 1rem 0;
+  text-align: justify;
 }
 
 .donate-manual-container ul li .icon {
