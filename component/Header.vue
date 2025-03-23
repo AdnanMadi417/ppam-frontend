@@ -35,19 +35,7 @@ const logo = "./images/ppam-header-logo.png"
   height: auto;
 }
 
-.header-title h2 {
-  font-size: 1.8rem;
-  font-weight: normal;
-  text-transform: uppercase;
-  color: var(--text-color);
-  text-align: center;
-}
-
 @media (max-width: 992px) {
-  .header-title h2 {
-    display: none;
-  }
-
   .header-wrapper {
     justify-content: center;
     text-align: center;
@@ -69,17 +57,9 @@ const logo = "./images/ppam-header-logo.png"
   .logo-container img {
     width: 70px;
   }
-
-  .header-title h2 {
-    font-size: 1.2rem;
-  }
 }
 
 @media (max-width: 480px) {
-  .header-title h2 {
-    font-size: 1rem;
-  }
-
   .logo-container img {
     width: 60px;
   }
