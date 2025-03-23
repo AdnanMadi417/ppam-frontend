@@ -15,7 +15,7 @@ const information = [
 const images = [
   {
     url: "./images/ppam-donateQRcode.png",
-    alt: "WB-5core-values"
+    alt: "ppam-donateQRcode"
   }
 ];
 </script>
