@@ -1,6 +1,6 @@
 <script setup>
 
-const logo = "./images/ppam-logo.png"
+const logo = "./images/ppam-header-logo.png"
 
 </script>
 
@@ -9,15 +9,10 @@ const logo = "./images/ppam-logo.png"
     <div class="header-wrapper">
 
       <div class="logo-container">
-        <a href="http://www.ppam.my">
+        <a href="http://ppam.my">
           <img :src="logo" alt="PPAM Logo"/>
         </a>
       </div>
-
-      <div class="header-title">
-        <h2>Persatuan Progresif Malaysia – Palestin</h2>
-      </div>
-
     </div>
   </div>
 </template>
