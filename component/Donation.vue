@@ -3,7 +3,7 @@ const bankTransferSections = [
   {
     title: 'Donate via Bank Transfer',
     icon: 'i-heroicons-banknotes',
-    content: 'Liberty to Learn, May Bank – Account Number: 564061455054, Swift Code: MBBEMYKL'
+    content: 'Liberty to Learn, May Bank – Account Number: 5640 6145 5054, Swift Code: MBBEMYKL'
   },
   {
     title: 'Send Us Your Transfer Slip',

@@ -3,20 +3,18 @@ const information = [
   {
     title: "Vision",
     description:
-        "To be a leading support hub for Palestinian students in Malaysia, fostering academic excellence, personal growth, and cultural pride, while strengthening the bonds of solidarity within the Palestinian community."
+        "We strive to empower Palestinian students in Malaysia by providing comprehensive support to help them build a secure and independent future. This includes financial assistance for tuition fees, academic workshops, conferences, cultural programs, educational trips, and guidance for university registration. Through these initiatives, we aim to foster academic excellence, cultural enrichment, and professional growth."
   },
   {
     title: "Mission",
     description:
-        "To provide educational, social, and emotional support to Palestinian students studying in Malaysia.\n" +
-        "To create a strong network that connects Palestinian students with academic, professional, and community opportunities.\n" +
-        "To preserve and promote Palestinian identity, heritage, and values among the student community."
+        "Support and empower Palestinian students and youth in Malaysia by enhancing their academic and professional skills, fostering cultural exchange and cooperation with Malaysian and international youth, and equipping them with the necessary expertise to contribute effectively to the Palestinian cause. Through educational support, skill development, and cross-cultural engagement, we strive to create a strong, capable generation ready to shape a better future."
   }
 ];
 
 const images = [
   {
-    url: "./images/landing-bg.png",
+    url: "./images/ppam-donateQRcode.png",
     alt: "WB-5core-values"
   }
 ];
@@ -25,7 +23,7 @@ const images = [
 <template>
   <section class="ppam-about-section">
     <div class="ppam-about-container">
-      <h1 class="ppam-about-title">About Palestinian Progressive Association Malaysia</h1>
+      <h1 class="ppam-about-title">About PPA-M</h1>
       <hr class="ppam-divider"/>
 
       <div class="ppam-information">
