@@ -3,22 +3,22 @@ const bankTransferSections = [
   {
     title: 'Donate via Bank Transfer',
     icon: 'i-heroicons-banknotes',
-    content: 'Liberty to Learn, May Bank – Account Number: 5640 6145 5054, Swift Code: MBBEMYKL'
+    content: 'Donate to PPA-M Account at MayBank – Account Number: 5640 6145 5054, Swift Code: MBBEMYKL'
   },
   {
     title: 'Send Us Your Transfer Slip',
     icon: 'i-heroicons-envelope',
-    content: 'Kindly email us at donation@ppam.my with your name and transfer slip so we can track your contribution.'
+    content: 'Kindly email us at info@ppam.my with your name and transfer slip so we can track your contribution.'
   },
   {
     title: 'Note on Tax Deduction',
     icon: 'i-heroicons-information-circle',
-    content: 'Donations to PPAM are not tax-deductible, but we will issue a receipt to acknowledge your generosity.'
+    content: 'PPA-M will issue a donation receipt to acknowledge your generosity.'
   },
   {
     title: 'Thank You!',
     icon: 'i-heroicons-heart',
-    content: 'Thank you for being part of our mission to support Palestinian students in Malaysia. Your kindness makes a difference!'
+    content: 'Thank you for being part of our mission to support Palestinian students in Malaysia.'
   }
 ]
 </script>
@@ -28,7 +28,7 @@ const bankTransferSections = [
     <div class="donate-manual-container">
       <h2 class="title">Every Contribution Means the World to Us</h2>
       <h3 class="sub-title">
-        Your support helps Palestinian students in Malaysia continue their education, care, and build a brighter future.
+        Every Contribution Counts, Every Student Matters.
       </h3>
       <ul aria-label="Bank transfer instructions">
         <li  v-for="(section, index) in bankTransferSections" :key="index" >
@@ -53,8 +53,9 @@ const bankTransferSections = [
 }
 
 .donate-manual-container {
+  background: #EEEEEE;
   padding: 2rem;
-  box-shadow: rgba(149, 157, 165, 0.4) 0 10px 20px;
+  box-shadow: rgba(149, 157, 165, 0.4) 3px 8px 24px;
 }
 
 .title {

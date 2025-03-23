@@ -9,7 +9,7 @@ const landing = "./images/ppam-logo.png"
     <div class="content-wrapper">
       <div class="text-container">
         <h2 class="headline">Palestinian Progressive Association Malaysia</h2>
-        <p class="subtext">Coming Soon</p>
+        <p class="subtext">We are working hard to bring you new experience</p>
       </div>
       <div class="image-container">
         <img :src="landing" alt="landing-image" class="landing-image" />
@@ -73,7 +73,7 @@ const landing = "./images/ppam-logo.png"
 }
 
 .subtext {
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 1.6;
   margin-bottom: 1.5rem;
   color: var(--primary-color);

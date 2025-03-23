@@ -21,12 +21,16 @@ const currentYear = new Date().getFullYear();
         </div>
         <div class="box">
           <span class="icon"><UIcon name="ic-baseline-email"/></span>
-          <p class="info"><a href="mailto:info@aiu.edu.my">info@ppam.my</a></p>
+          <p class="info"><a href="mailto:info@ppam.my">info@ppam.my</a></p>
         </div>
         <div class="box">
           <span class="icon"><UIcon name="mdi-university"/></span>
-          <p class="info"><a href="https://www.ppam.my/">Palestinian Progressive Association Malaysia
-          </a></p>
+          <p class="info">
+            <a
+                href="http://ppam.my">
+              Empowering Students, Strengthening Palestine
+            </a>
+          </P>
         </div>
       </div>
       <hr class="divider">
@@ -51,7 +55,8 @@ const currentYear = new Date().getFullYear();
           <div></div>
         </div>
         <div class="footer-bottom">
-          <p>&copy; Copyright <a href="http://www.ppam.my">Persatuan Progresif Malaysia – Palestin {{ currentYear }}</a>
+          <p>&copy; All Copyright Reserved For <a href="http://ppam.my">Palestinian Progressive Association- Malaysia
+            {{ currentYear }}</a>
           </p>
         </div>
       </div>
