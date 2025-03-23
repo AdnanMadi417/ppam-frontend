@@ -215,7 +215,7 @@ const currentYear = new Date().getFullYear();
 .footer-bottom a {
   color: var(--text-color);
   text-decoration: none;
-  transition: color .3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 .footer-bottom a:hover {
@@ -223,17 +223,37 @@ const currentYear = new Date().getFullYear();
   text-decoration: underline;
 }
 
-.info {
-  a {
-    text-decoration: none;
-    color: var(--text-color);
-    transition: color .3s ease-in-out;
+.info a {
+  text-decoration: none;
+  color: var(--text-color);
+  transition: color 0.3s ease-in-out;
+}
+
+.info a:hover {
+  color: var(--text-hover);
+}
+
+@media (max-width: 768px) {
+  .footer-bottom {
+    font-size: 1rem;
+    padding: 1.5rem 1rem;
+    text-align: center;
   }
 }
 
-.info {
-  a:hover {
-    color: var(--text-hover);
+@media (max-width: 480px) {
+  .footer-bottom {
+    font-size: 0.9rem;
+    padding: 1rem 0.5rem;
+    text-align: center;
+  }
+
+  .footer-bottom a,
+  .info a {
+    word-break: break-word;
+    font-size: 0.95rem;
   }
 }
+
+
 </style>
